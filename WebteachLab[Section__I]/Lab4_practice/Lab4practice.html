@@ -1,0 +1,62 @@
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <script src="Lab4practice.js"></script>
+  </head>
+
+  <body>
+    <h1>Student Registration Form</h1>
+
+    <form onsubmit="return validation();">
+      <table>
+        <tr>
+          <td>First Name</td>
+          <td>
+            <input type="text" id="firstName" />
+          </td>
+          <td>
+            <p style="color:red" id="firstNameErr"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Last Name</td>
+          <td>
+            <input type="text" id="lastName" />
+          </td>
+          <td>
+            <p style="color:red" id="lastNameErr"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Email Address</td>
+          <td>
+            <input type="text" id="email" />
+          </td>
+          <td>
+            <p style="color:red" id="emailErr"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td>Phone Number</td>
+          <td>
+            <input type="text" id="phone" />
+          </td>
+          <td>
+            <p style="color:red" id="phoneErr"></p>
+          </td>
+        </tr>
+
+        <tr>
+          <td></td>
+          <td>
+            <input type="submit" value="Register" />
+          </td>
+        </tr>
+      </table>
+    </form>
+
+  </body>
+</html>
