@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <script src="addtocart.js"></script>
+</head>
+<body>
+
+<fieldset>
+    <legend>Shopping Cart</legend>
+
+    <form onkeyup="return calculateTotal();" onchange="return calculateTotal();">
+        <table>
+            <tr>
+                <td>Unit price :</td>
+                <td><input type="text" id="unitprice" value="100" readonly></td>
+            </tr>
+
+            <tr>
+                <td>Quantity :</td>
+                <td>
+                    <input type="number" id="quantity"   min="1">
+                </td>
+                <td><p id="quantityError"></p></td>
+
+            </tr>
+
+
+            <tr>
+                <td>Payable :</td>
+                <td><input type="text" id="payable" readonly></td>
+            </tr>
+        </table>
+
+        <button  id="cartBtn" style="display: none">
+            Add to Cart
+        </button>
+    </form>
+
+</fieldset>
+
+</body>
+</html>
