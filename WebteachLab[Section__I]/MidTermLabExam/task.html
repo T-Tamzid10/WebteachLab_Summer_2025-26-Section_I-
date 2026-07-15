@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <fieldset>
+
+            <legend>Student Registration</legend>
+
+            <form  onsubmit="return validateForm()">
+
+                <table>
+
+                    <tr>
+                        <td><label>First Name <span id="a">*</span></label></td>
+                        <td><input type="text" id="firstName"></td>
+                        <td><span id="firstNameError" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Last Name <span id="b" >*</span></label></td>
+                        <td><input type="text" id="lastName"></td>
+                        <td><span id="lastNameError" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Student ID <span id="c">*</span></label></td>
+                        <td><input type="text" id="studentId"></td>
+                        <td><span id="studentIdError" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Email <span id="d">*</span></label></td>
+                        <td><input type="text" id="email"></td>
+                        <td><span id="emailError" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Credit Completed <span id="e">*</span></label></td>
+                        <td><input type="number" id="creditCompleted"></td>
+                        <td><span id="creditCompletedError" class="error"></span></td>
+                    </tr>
+
+                    <tr>
+                        <td><label>Department <span id="f" ></span></label></td>
+                        <td>
+                            <select id="department">
+                                <option value="">Select Department</option>
+                                <option>CSE</option>
+                                <option>IT</option>
+                                <option>EEE</option>
+                            </select>
+                        </td>
+                        <td><span id="departmentError" class="error"></span></td>
+                    </tr>
+
+                </table>
+
+                <div class="btn">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+
+        </fieldset>
+
+    </div>
+
+    <h2 align="center">Registered Students</h2>
+
+    <table id="studentTable">
+
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Student ID</th>
+            <th>Email</th>
+            <th>Credit</th>
+            <th>Department</th>
+        </tr>
+
+    </table>
+
+</body>
+
+</html>
